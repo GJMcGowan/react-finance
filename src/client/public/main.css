@@ -1,0 +1,35 @@
+/* Styles used on every page */
+a,
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.box {
+  border-radius: 5px;
+}
+
+.small-margin {
+  margin: 10px;
+}
+
+.top-margin {
+  margin-top: 75px;
+}
+
+/* Colors */
+
+.grey {
+  background-color: #E3E3E3;
+}
+
+.whitesmoke {
+  background-color: whitesmoke;
+}
+
+/* TODO: Move this to another css file*/
+/* StepBox */
+.stepBox {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

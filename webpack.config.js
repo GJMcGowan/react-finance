@@ -18,7 +18,16 @@ var config = {
         loader : 'babel'
       }
     ]
-  }
+  },
+  devServer: {
+    contentBase: APP_DIR,
+    hot: true
+  },
+  plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ]
 };
 
 module.exports = config;

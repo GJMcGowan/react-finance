@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack -d --watch",
+    "test": "mocha test/.setup.js test/**/**-test.js",
     "start": "node server.js",
     "postinstall": "webpack -p --config webpack.prod.config.js"
   },
@@ -31,5 +32,13 @@
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
     "webpack-hot-middleware": "^2.10.0"
+  },
+  "devDependencies": {
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "enzyme": "^2.3.0",
+    "mocha": "^2.5.3",
+    "react-addons-test-utils": "^15.1.0",
+    "react-dom": "^15.1.0"
   }
 }

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack -d --watch",
     "test": "mocha test/.setup.js test/**/**-test.js",
-    "start": "node server.js",
+    "start": "npm test && node server.js",
     "postinstall": "webpack -p --config webpack.prod.config.js"
   },
   "repository": {
